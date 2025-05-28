@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Company Listings</title>
+</head>
+<body>
+    <h1>Companies</h1>
+
+    {% if companies %}
+        <ul>
+            {% for company in companies %}
+                <li>
+                    <a href="{% url 'company_detail' company.id %}">{{ company.name }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No companies found.</p>
+    {% endif %}
+</body>
+</html>
+
+
+
+
+

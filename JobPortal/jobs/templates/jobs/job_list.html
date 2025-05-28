@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Listings</title>
+    <style>
+        .job-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+        }
+        .btn {
+            padding: 8px 12px;
+            text-decoration: none;
+            color: white;
+            background-color: #28a745;
+            border-radius: 4px;
+        }
+        .btn-primary {
+            background-color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Available Jobs</h1>
+
+    {% for job in jobs %}
+        <div class="job-card">
+            <h2>{{ job.title }}</h2>
+            <p><strong>Company:</strong> {{ job.company.name }}</p>
+            <p><strong>Type:</strong> {{ job.job_type }}</p>
+            <p><strong>Salary:</strong> ₹{{ job.salary }}</p>
+            <p><strong>Description:</strong> {{ job.description }}</p>
+
+            {% if user.is_authenticated %}
+                <a href="{% url 'apply_for_job' job.id %}" class="btn">Apply</a>
+            {% else %}
+                <a href="{% url 'login' %}?next={% url 'apply_for_job' job.id %}" class="btn btn-primary">Login to Apply</a>
+            {% endif %}
+        </div>
+    {% endfor %}
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ company.name }} - Details</title>
+</head>
+<body>
+    <h1>{{ company.name }}</h1>
+    <p><strong>Location:</strong> {{ company.location }}</p>
+    <p><strong>Website:</strong> <a href="{{ company.website }}" target="_blank">{{ company.website }}</a></p>
+    <p><strong>Description:</strong> {{ company.description }}</p>
+
+    <h2>Jobs at {{ company.name }}</h2>
+    {% if jobs %}
+        <ul>
+            {% for job in jobs %}
+                <li>
+                    <a href="{% url 'job_detail' job.id %}">{{ job.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No jobs posted by this company yet.</p>
+    {% endif %}
+</body>
+</html>
+
+

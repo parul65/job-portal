@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apply for {{ job.title }}</title>
+</head>
+<body>
+    <h1>Apply for {{ job.title }}</h1>
+
+    {% if message %}
+        <p>{{ message }}</p>
+    {% else %}
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit">Confirm Apply</button>
+        </form>
+    {% endif %}
+</body>
+</html>
+
