@@ -63,16 +63,16 @@ GitHub: https://github.com/parul65
 ## Screenshots
 
 ### Homepage  
-![Homepage](https://drive.google.com/file/d/105ScL2eSnNL_uj9NGTQtX2CjRc2_EQQc/view?usp=drivesdk))
+![Homepage] (https://drive.google.com/file/d/105ScL2eSnNL_uj9NGTQtX2CjRc2_EQQc/view?usp=drivesdk))
 
 ### Job Details  
-![Job Details](https://drive.google.com/file/d/105xvr4GrUTYCb08QE1NrR7i0dYXaMt0M/view?usp=drivesdk)
+![Job Details] (https://drive.google.com/file/d/105xvr4GrUTYCb08QE1NrR7i0dYXaMt0M/view?usp=drivesdk)
 
 ### Comapny Details 
-![Company Details](https://drive.google.com/file/d/10D58IwCEskKnfs8S8WfaF4oF9yOiwC0Z/view?usp=drivesdk))
+![Company Details] (https://drive.google.com/file/d/10D58IwCEskKnfs8S8WfaF4oF9yOiwC0Z/view?usp=drivesdk))
 
 ### Application Details
-![Application Details](https://drive.google.com/file/d/10KEEIVQpbCe3mWRkUs0LirVfEVqkqPLb/view?usp=drivesdk)
+![Application Details] (https://drive.google.com/file/d/10KEEIVQpbCe3mWRkUs0LirVfEVqkqPLb/view?usp=drivesdk)
 
 ### User Details
 ![User Details] (https://drive.google.com/file/d/10McHGwPxRIzGg9Y3ARN3oFRH0GmVW6Um/view?usp=drivesdk)
