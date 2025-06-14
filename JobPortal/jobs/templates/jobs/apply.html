@@ -1,19 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Apply for {{ job.title }}</title>
+    <title>Apply for Job</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #00b09b, #96c93d);
+            font-family: 'Segoe UI', sans-serif;
+            color: #fff;
+        }
+        .apply-container {
+            max-width: 600px;
+            margin: 60px auto;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            border-radius: 15px;
+        }
+        label {
+            font-weight: bold;
+        }
+        .btn-submit {
+            background-color: #00d2ff;
+            border: none;
+            color: white;
+            width: 100%;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        textarea {
+            resize: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>Apply for {{ job.title }}</h1>
-
-    {% if message %}
-        <p>{{ message }}</p>
-    {% else %}
-        <form method="post">
+    <div class="apply-container">
+        <h3 class="text-center mb-4">Apply for {{ job.title }}</h3>
+        <form method="post" enctype="multipart/form-data">
             {% csrf_token %}
-            <button type="submit">Confirm Apply</button>
+            <div class="form-group">
+                <label for="resume">Upload Resume</label>
+                <input type="file" name="resume" id="resume" class="form-control-file text-light" required>
+            </div>
+            <div class="form-group">
+                <label for="cover_letter">Cover Letter</label>
+                <textarea name="cover_letter" id="cover_letter" rows="6" class="form-control" placeholder="Write a brief cover letter..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-submit mt-3">Submit Application</button>
         </form>
-    {% endif %}
+    </div>
 </body>
 </html>
+
+
+
 
