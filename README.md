@@ -62,7 +62,7 @@ http://127.0.0.1:8000/user/login/ (USERNAME - parul  PASSWORD - newpassword123)
 
 6. USUAGE : 
 6.1 Admin
-Go to the Django admin panel: http://127.0.0.1:8000/admin/  (USERNAME - KIIT  PASSWORD - Parul@1966)
+Go to the Django admin panel: http://127.0.0.1:8000/admin/ 
 Login using your superuser credentials.
 
 You can:
@@ -71,7 +71,7 @@ Post and manage Job Listings.
 View and manage all Job Applications.
 
 6.2 User
-Go to the user login page: http://127.0.0.1:8000/user/login/ (USERNAME - parul  PASSWORD - newpassword123)
+Go to the user login page: http://127.0.0.1:8000/user/login/ 
 Login or register to access your dashboard.
 
 On the homepage, users can:
